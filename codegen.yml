@@ -1,0 +1,21 @@
+# watch: true
+overwrite: true
+schema: 'https://service.mytripper.ir/api/'
+documents: 'graphql/**/*.graphql'
+generates:
+  graphql/generated/types.ts:
+    config:
+      withHooks: true
+      namingConvention:
+        enumValues: keep
+    plugins:
+      - 'typescript'
+      - 'typescript-operations'
+      - 'typescript-react-apollo'
+      - 'named-operations-object'
+  graphql/graphql.schema.json:
+    plugins:
+      - 'introspection'
+  # graphql/fragment-matcher.ts:
+  #   plugins:
+  #     - fragment-matcher

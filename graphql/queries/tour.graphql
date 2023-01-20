@@ -1,0 +1,41 @@
+query AllTourCategories {
+  tourCategories {
+    edges {
+      node {
+        id
+        title
+        image
+        svg
+      }
+    }
+  }
+}
+
+query AllTour {
+  allTour {
+    edges {
+      node {
+        id
+        days
+        title
+        description
+        defaultImage
+        likes
+        tourLeader {
+          id
+          name
+          user {
+            avatar
+            username
+          }
+        }
+        category {
+          title
+        }
+        province {
+          name
+        }
+      }
+    }
+  }
+}

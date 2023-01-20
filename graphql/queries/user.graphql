@@ -1,0 +1,246 @@
+query Me {
+  me {
+    id
+    username
+    avatar
+  }
+}
+
+query MeTourLeader {
+  me {
+    tourleader {
+      id
+      name
+
+      tourLeadingId
+      successfulToursCount
+    }
+  }
+}
+
+query MeDetail {
+  me {
+    ...UserFields
+    profilemodel {
+      ...ProfileFields
+    }
+    trips {
+      edges {
+        node {
+          ...TripSimpleFields
+        }
+      }
+    }
+  }
+}
+
+query UserDetail($username: String!) {
+  user(username: $username) {
+    ...UserFields
+    profilemodel {
+      ...ProfileFields
+    }
+    trips {
+      edges {
+        node {
+          ...TripSimpleFields
+        }
+      }
+    }
+  }
+}
+
+query isFollowed($followedUsername: String!) {
+  followedUser(username: $followedUsername)
+}
+
+query TourLeaderDetail($username: String!, $followedUsername: String!) {
+  user(username: $username) {
+    tourleader {
+      id
+      name
+      tourLeadingId
+      successfulToursCount
+    }
+  }
+  followedUser(username: $followedUsername)
+}
+
+query isFollowed($followedUsername: String!) {
+  followedUser(username: $followedUsername)
+}
+
+query userFollowings($username: String!) {
+  user(username: $username) {
+    followingUsers {
+      edges {
+        node {
+          followed {
+            username
+            avatar
+            id
+          }
+        }
+      }
+    }
+  }
+}
+
+query UserFollowers($username: String!) {
+  user(username: $username) {
+    followerUsers {
+      edges {
+        node {
+          follower {
+            id
+            username
+            avatar
+          }
+        }
+      }
+    }
+  }
+}
+
+query MeFollowings {
+  me {
+    followingUsers {
+      edges {
+        node {
+          followed {
+            id
+            username
+            avatar
+          }
+        }
+      }
+    }
+  }
+}
+
+query MeFollowers {
+  me {
+    followerUsers {
+      edges {
+        node {
+          follower {
+            id
+            username
+            avatar
+          }
+        }
+      }
+    }
+  }
+}
+
+query AllProfiles {
+  allUsers {
+    edges {
+      node {
+        id
+        username
+        avatar
+        trips {
+          edges {
+            node {
+              id
+            }
+          }
+        }
+        profilemodel {
+          tripStatus
+          header
+          about
+          followersCount
+          followingsCount
+          achievements {
+            edges {
+              node {
+                title
+                image
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+query MeSavedTrips {
+  myTripCollection {
+    edges {
+      node {
+        trip {
+          ...TripSimpleFields
+        }
+      }
+    }
+  }
+}
+
+query MyTrips($published: Boolean) {
+  allMyTrip(published: $published) {
+    edges {
+      node {
+        ...TripSimpleFields
+      }
+    }
+  }
+}
+
+fragment UserFields on UserType {
+  id
+  username
+  avatar
+  email
+  dateJoined
+  # firstName
+  # lastName
+}
+
+fragment ProfileFields on ProfileType {
+  about
+  tripStatus
+  header
+  gender
+  followersCount
+  followingsCount
+}
+
+mutation DeleteTrip($deleteTripTripId: ID!) {
+  deleteTrip(tripId: $deleteTripTripId) {
+    deleted
+  }
+}
+
+mutation PublisTrip($tripId: ID!) {
+  publishTrip(tripId: $tripId) {
+    success
+    trip {
+      published
+    }
+  }
+}
+
+mutation UnPublisTrip($tripId: ID!) {
+  undoPublishTrip(tripId: $tripId) {
+    success
+    trip {
+      published
+    }
+  }
+}
+
+query SearchUsername($username: String, $first: Int) {
+  allUsers(username_Icontains: $username, first: $first) {
+    edges {
+      node {
+        username
+        id
+        avatar
+      }
+    }
+  }
+}

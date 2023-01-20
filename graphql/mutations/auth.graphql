@@ -1,0 +1,95 @@
+mutation VerifySms($verifySmsCode: String!, $verifySmsPhoneNumber: String!) {
+  verifySms(code: $verifySmsCode, phoneNumber: $verifySmsPhoneNumber) {
+    success
+  }
+}
+
+mutation RegisterSms(
+  $registerSmsPassword1: String!
+  $registerSmsPassword2: String!
+  $registerSmsPhoneNumber: String!
+  $registerSmsUsername: String
+) {
+  registerSms(
+    password1: $registerSmsPassword1
+    password2: $registerSmsPassword2
+    phoneNumber: $registerSmsPhoneNumber
+    username: $registerSmsUsername
+  ) {
+    success
+  }
+}
+
+mutation RefreshToken($refreshTokenRefreshToken: String!) {
+  refreshToken(refreshToken: $refreshTokenRefreshToken) {
+    token
+    payload
+    refreshToken
+  }
+}
+
+mutation ResetPasswordSms(
+  $resetPasswordSmsCode: String!
+  $resetPasswordSmsNewPassword1: String!
+  $resetPasswordSmsNewPassword2: String!
+  $resetPasswordSmsPhoneNumber: String!
+) {
+  resetPasswordSms(
+    code: $resetPasswordSmsCode
+    newPassword1: $resetPasswordSmsNewPassword1
+    newPassword2: $resetPasswordSmsNewPassword2
+    phoneNumber: $resetPasswordSmsPhoneNumber
+  ) {
+    success
+  }
+}
+
+mutation ForgotPasswordSms($forgotPasswordSmsPhoneNumber: String!) {
+  forgotPasswordSms(phoneNumber: $forgotPasswordSmsPhoneNumber) {
+    success
+  }
+}
+
+mutation TokenAuth(
+  $tokenAuthPassword: String!
+  $tokenAuthPhoneNumber: String
+  $tokenAuthEmail: String
+  $tokenAuthUsername: String
+) {
+  tokenAuth(
+    password: $tokenAuthPassword
+    phoneNumber: $tokenAuthPhoneNumber
+    email: $tokenAuthEmail
+    username: $tokenAuthUsername
+  ) {
+    token
+    success
+
+    refreshToken
+  }
+}
+mutation ResendVerificationSms($resendVerificationSmsPhoneNumber: String!) {
+  resendVerificationSms(phoneNumber: $resendVerificationSmsPhoneNumber) {
+    success
+  }
+}
+
+mutation PasswordChange(
+  $passwordChangeOldPassword: String!
+  $passwordChangeNewPassword1: String!
+  $passwordChangeNewPassword2: String!
+) {
+  passwordChange(
+    oldPassword: $passwordChangeOldPassword
+    newPassword1: $passwordChangeNewPassword1
+    newPassword2: $passwordChangeNewPassword2
+  ) {
+    success
+  }
+}
+
+mutation UsernameChange($username: String!) {
+  changeUsername(username: $username) {
+    success
+  }
+}

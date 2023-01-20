@@ -1,0 +1,19 @@
+query SearchAccessory($name: String, $id: String, $first: Int) {
+  allAccessory(
+    name_Icontains: $name
+    referenceLinks_AccessoryIdInSite_Icontains: $id
+    first: $first
+  ) {
+    edges {
+      node {
+        id
+        name
+        imageLink
+        category {
+          id
+          title
+        }
+      }
+    }
+  }
+}

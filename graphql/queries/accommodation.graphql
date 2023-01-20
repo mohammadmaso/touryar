@@ -1,0 +1,11 @@
+query getAllResidenceTypes {
+  allResidenceTypes {
+    edges {
+      node {
+        svg
+        name
+        id
+      }
+    }
+  }
+}

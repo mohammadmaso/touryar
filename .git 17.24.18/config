@@ -1,0 +1,15 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+	precomposeunicode = true
+[remote "origin"]
+	url = git@github.com:TripperGroup/Tripper-front.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	pushurl = git@github.com:mohammadmaso/TripperReact-V2.git
+	pushurl = git@github.com:TripperGroup/Tripper-front.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master

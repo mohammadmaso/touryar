@@ -1,0 +1,479 @@
+query AllTrip(
+  $allTripOffset: Int
+  $allTripBefore: String
+  $allTripAfter: String
+  $allTripFirst: Int
+  $allTripLast: Int
+  $allTripCategories: [[ID]]
+) {
+  allTrip(
+    offset: $allTripOffset
+    before: $allTripBefore
+    after: $allTripAfter
+    first: $allTripFirst
+    last: $allTripLast
+    categories_In: $allTripCategories
+  ) {
+    pageInfo {
+      hasNextPage
+      hasPreviousPage
+      startCursor
+      endCursor
+    }
+    edges {
+      cursor
+      node {
+        id
+        title
+        description
+        createdAt
+        startDate
+        endDate
+        viewsCount
+        defaultImage
+        author {
+          id
+          username
+          avatar
+        }
+        categories {
+          edges {
+            node {
+              title
+            }
+          }
+        }
+        country {
+          name
+        }
+        province {
+          name
+        }
+        likes
+        userLiked
+        places {
+          edges {
+            node {
+              id
+            }
+          }
+        }
+        published
+        experiences {
+          edges {
+            node {
+              id
+            }
+          }
+        }
+      }
+    }
+  }
+}
+query AllTripList(
+  $allTripOffset: Int
+  $allTripBefore: String
+  $allTripAfter: String
+  $allTripFirst: Int
+  $allTripLast: Int
+  $allTripCategories: [[ID]]
+) {
+  allTrip(
+    offset: $allTripOffset
+    before: $allTripBefore
+    after: $allTripAfter
+    first: $allTripFirst
+    last: $allTripLast
+    categories_In: $allTripCategories
+  ) {
+    pageInfo {
+      hasNextPage
+      hasPreviousPage
+      startCursor
+      endCursor
+    }
+    edges {
+      cursor
+      node {
+        id
+        title
+        description
+        createdAt
+        startDate
+        endDate
+        viewsCount
+        defaultImage
+        author {
+          id
+          username
+          avatar
+        }
+        categories {
+          edges {
+            node {
+              title
+            }
+          }
+        }
+        country {
+          name
+        }
+        province {
+          name
+        }
+        likes
+        userLiked
+        places {
+          edges {
+            node {
+              id
+            }
+          }
+        }
+        activities {
+          edges {
+            node {
+              svg
+              title
+              titleFa
+              id
+            }
+          }
+        }
+        published
+        experiences {
+          edges {
+            node {
+              id
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+query AllTripCategories {
+  allTripCategories {
+    edges {
+      node {
+        id
+        title
+        image
+      }
+    }
+  }
+}
+
+fragment TripSimpleFields on TripType {
+  id
+  title
+  description
+  createdAt
+  startDate
+  endDate
+  defaultImage
+  viewsCount
+  author {
+    id
+    username
+    avatar
+  }
+  country {
+    name
+  }
+  published
+  province {
+    name
+  }
+  userLiked
+  categories {
+    edges {
+      node {
+        title
+      }
+    }
+  }
+  likes
+  places {
+    edges {
+      node {
+        id
+      }
+    }
+  }
+  experiences {
+    edges {
+      node {
+        id
+      }
+    }
+  }
+}
+
+query AllActivities {
+  allActivities {
+    edges {
+      node {
+        id
+        svg
+        title
+        titleFa
+        description
+      }
+    }
+  }
+}
+
+query TripDetailLikes($tripId: ID!) {
+  trip(id: $tripId) {
+    likes
+    userLiked
+  }
+}
+
+query TripDetail($tripId: ID!) {
+  trip(id: $tripId) {
+    userLiked
+    userSaved
+    id
+    tripMap
+    gpsTrack
+    costs
+    checkList
+    todoList
+    published
+    activities {
+      edges {
+        node {
+          svg
+          title
+          titleFa
+          id
+        }
+      }
+    }
+    accessories {
+      edges {
+        node {
+          id
+          likesCount
+          brand {
+            logo
+            name
+          }
+          image
+          imageLink
+          name
+        }
+      }
+    }
+    companions {
+      edges {
+        node {
+          id
+          username
+          avatar
+        }
+      }
+    }
+    images {
+      edges {
+        node {
+          id
+          image
+          description
+          copyrightName
+        }
+      }
+    }
+
+    videos {
+      edges {
+        node {
+          video
+          description
+          copyrightName
+        }
+      }
+    }
+
+    title
+    description
+    createdAt
+    startDate
+    endDate
+    author {
+      id
+      username
+      avatar
+    }
+    likes
+    experiences {
+      edges {
+        node {
+          id
+          title
+          description
+          latitude
+          longitude
+          activities {
+            edges {
+              node {
+                id
+                title
+                titleFa
+                svg
+              }
+            }
+          }
+          images {
+            edges {
+              node {
+                id
+                latitude
+                longitude
+                description
+                image
+                copyrightName
+              }
+            }
+          }
+        }
+      }
+    }
+    residencesOfTrip {
+      edges {
+        node {
+          id
+          stayDuration
+          name
+          latitude
+          longitude
+          residenceType {
+            id
+            name
+            svg
+          }
+        }
+      }
+    }
+    places {
+      edges {
+        node {
+          id
+          name
+          longitude
+          latitude
+        }
+      }
+    }
+    transfers {
+      edges {
+        node {
+          id
+          duration
+          startTime
+          src {
+            name
+            latitude
+            longitude
+            id
+          }
+          destination {
+            name
+            latitude
+            longitude
+            id
+          }
+          transferType {
+            id
+            title
+            svg
+          }
+        }
+      }
+    }
+    defaultImage
+    viewsCount
+    country {
+      id
+      name
+    }
+    province {
+      id
+      name
+      longitude
+      latitude
+    }
+    categories {
+      edges {
+        node {
+          id
+          title
+        }
+      }
+    }
+  }
+}
+
+query TripReviews($tripId: ID!) {
+  trip(id: $tripId) {
+    reviewsOfTrip {
+      edges {
+        node {
+          author {
+            id
+            username
+            avatar
+          }
+          likesCount
+          dislikesCount
+          description
+          createdAt
+          id
+          userLiked
+        }
+      }
+    }
+  }
+}
+
+query AllCountries {
+  allCountries {
+    edges {
+      node {
+        name
+        id
+      }
+    }
+  }
+}
+
+query AllProvincesOfCountry($allProvincesCountry: ID) {
+  allProvinces(country: $allProvincesCountry) {
+    edges {
+      node {
+        id
+        name
+      }
+    }
+  }
+}
+
+query AllCitiesOfProvince($province: ID!) {
+  allCities(province: $province) {
+    edges {
+      node {
+        id
+        name
+      }
+    }
+  }
+}
+
+query TripReviewLikeStatus($tripReviewId: ID!) {
+  tripReview(id: $tripReviewId) {
+    userLiked
+  }
+}

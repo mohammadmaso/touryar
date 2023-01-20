@@ -1,0 +1,87 @@
+0000000000000000000000000000000000000000 729d5bdfe0cb74a07637fc34bea6bfc0d56069cd mohammad maso <mohammadmasoudie@gmail.com> 1655615201 +0430	clone: from https://github.com/mohammadmaso/TripperReact-V2.git
+729d5bdfe0cb74a07637fc34bea6bfc0d56069cd f524ec25bf34b8b148352523743c34bcf5530f13 mohammad maso <mohammadmasoudie@gmail.com> 1655788085 +0430	commit: Add icon to wiki category list
+f524ec25bf34b8b148352523743c34bcf5530f13 58b4b0ed417f716381d8737319f1207d433e1d11 mohammad maso <mohammadmasoudie@gmail.com> 1655788450 +0430	commit: fix Category icon import issue
+58b4b0ed417f716381d8737319f1207d433e1d11 40923dc07c71f29a2e6a46f76e54066034c8743c mohammad maso <mohammadmasoudie@gmail.com> 1655789278 +0430	commit: type fix
+40923dc07c71f29a2e6a46f76e54066034c8743c 71fa44e790fa15d5d27017102927e3c65f43c3b6 mohammad maso <mohammadmasoudie@gmail.com> 1655796092 +0430	commit: add svg to props
+71fa44e790fa15d5d27017102927e3c65f43c3b6 1f717e985ca0bc6fe433b7cdba910487ea498eff mohammad maso <mohammadmasoudie@gmail.com> 1655796490 +0430	commit: fix align
+1f717e985ca0bc6fe433b7cdba910487ea498eff 7145073ec9dd4bef4cf1a3448e3ed03ab214d675 mohammad maso <mohammadmasoudie@gmail.com> 1655797646 +0430	commit: vstack to hstack
+7145073ec9dd4bef4cf1a3448e3ed03ab214d675 f3a86ffeff9663a4351a7f3a4c5957582b15ce1b mohammad maso <mohammadmasoudie@gmail.com> 1655797806 +0430	commit: fix padding
+f3a86ffeff9663a4351a7f3a4c5957582b15ce1b 76becb53776484f48fc34573f0e7459d0a71ae15 mohammad maso <mohammadmasoudie@gmail.com> 1655798734 +0430	commit: remove datapicker2 comp
+76becb53776484f48fc34573f0e7459d0a71ae15 5e7287127f70ab84a4f2f2a4802985c7222707ac mohammad maso <mohammadmasoudie@gmail.com> 1655798976 +0430	commit: disable strict mode
+5e7287127f70ab84a4f2f2a4802985c7222707ac 64bd93dc0f6bdf7a42a53d00b9286ae5f241eca4 mohammad maso <mohammadmasoudie@gmail.com> 1655800169 +0430	commit: bug fix
+64bd93dc0f6bdf7a42a53d00b9286ae5f241eca4 64632d1b3f7955f70b999f5a4a2446557c41861d mohammad maso <mohammadmasoudie@gmail.com> 1655800723 +0430	commit: fix all avatar's alt problem
+64632d1b3f7955f70b999f5a4a2446557c41861d 62d818c1408029b82757995ecb6d008eb975c008 mohammad maso <mohammadmasoudie@gmail.com> 1655801213 +0430	commit: update chakra version
+62d818c1408029b82757995ecb6d008eb975c008 f503d207a653fe940995e4b4a499ce643e0f66a2 mohammad maso <mohammadmasoudie@gmail.com> 1655801449 +0430	commit: disable strict mode ts
+f503d207a653fe940995e4b4a499ce643e0f66a2 9186e69e49c8d3fd69f1a3dbb2740b24dbc3bc55 mohammad maso <mohammadmasoudie@gmail.com> 1657988509 +0430	commit: dummy
+9186e69e49c8d3fd69f1a3dbb2740b24dbc3bc55 dd33f68ba6bf41f53268e3ee76ee2eef1d8ffcc0 mohammad maso <mohammadmasoudie@gmail.com> 1657988585 +0430	commit: rm-dummy
+dd33f68ba6bf41f53268e3ee76ee2eef1d8ffcc0 da8d83a1c083d601f311dd7ee8b030e46a1653e9 mohammad maso <mohammadmasoudie@gmail.com> 1657988634 +0430	commit: set ts strict true
+da8d83a1c083d601f311dd7ee8b030e46a1653e9 9beb71c17b822e7becb26c8a00070323ee509411 mohammad maso <mohammadmasoudie@gmail.com> 1658033857 +0430	commit: upgrade dependencies.
+9beb71c17b822e7becb26c8a00070323ee509411 e344777e42ae459584812788a2845f03b0933124 mohammad maso <mohammadmasoudie@gmail.com> 1658035154 +0430	commit: add site config
+e344777e42ae459584812788a2845f03b0933124 8b27c362b69713430c30c6f11a7a9455417a37a0 mohammad maso <mohammadmasoudie@gmail.com> 1658035183 +0430	commit: fix setRTLTextPlugin error
+8b27c362b69713430c30c6f11a7a9455417a37a0 3fb531d9081bb11f72d172266c6c40ce3153cb98 mohammad maso <mohammadmasoudie@gmail.com> 1658035331 +0430	commit: fix component spelling
+3fb531d9081bb11f72d172266c6c40ce3153cb98 a54ebce7093a530e9a78aefd4c9eb14f6920669b mohammad maso <mohammadmasoudie@gmail.com> 1658035355 +0430	commit: fix component spelling and add sticky banner
+a54ebce7093a530e9a78aefd4c9eb14f6920669b cbff4c2e0117f59b1f4f04d44b1c7fcb6d5b56d8 mohammad maso <mohammadmasoudie@gmail.com> 1658035559 +0430	commit: fix responsive trip carousal
+cbff4c2e0117f59b1f4f04d44b1c7fcb6d5b56d8 804332e91c54c2a30506c49e77b0dac24ed19990 mohammad maso <mohammadmasoudie@gmail.com> 1658036114 +0430	commit: fix CTA's
+804332e91c54c2a30506c49e77b0dac24ed19990 e735716ba4aff3c8972f560169767d5193b4c462 mohammad maso <mohammadmasoudie@gmail.com> 1658036127 +0430	commit: modify nabvar items
+e735716ba4aff3c8972f560169767d5193b4c462 b96417e1251d66c2687030509ef3b08eb5994b91 mohammad maso <mohammadmasoudie@gmail.com> 1658036147 +0430	commit: clg register error to Debug it
+b96417e1251d66c2687030509ef3b08eb5994b91 8d873a3bd00204f4f6b6ac4eefff3c37d547b4a0 mohammad maso <mohammadmasoudie@gmail.com> 1658036242 +0430	commit: remove tour from landing
+8d873a3bd00204f4f6b6ac4eefff3c37d547b4a0 c363a9fab068b7fe08d7ab8a27a1e604f350ad6d mohammad maso <mohammadmasoudie@gmail.com> 1658036423 +0430	commit: route to travelogues page after login
+c363a9fab068b7fe08d7ab8a27a1e604f350ad6d 9c6216d1f1207e560d951c8c0b225a6280705305 mohammad maso <mohammadmasoudie@gmail.com> 1658036444 +0430	commit: fix trip index page
+9c6216d1f1207e560d951c8c0b225a6280705305 7e16c69e0253d26a5977c1ed93bd1a4105fc0c1d mohammad maso <mohammadmasoudie@gmail.com> 1658036608 +0430	commit: improve StickyBanner component
+7e16c69e0253d26a5977c1ed93bd1a4105fc0c1d f57c901aa8022e6b7734870134b19f6a52187cb2 mohammad maso <mohammadmasoudie@gmail.com> 1658036801 +0430	commit: some changes
+f57c901aa8022e6b7734870134b19f6a52187cb2 1137eee9f3769ded4dc4d6c55e19bce1f21e96b8 mohammad maso <mohammadmasoudie@gmail.com> 1658038313 +0430	commit: some fixes
+1137eee9f3769ded4dc4d6c55e19bce1f21e96b8 297376717c7bc0af963d17c1d847eca2cc998c5c mohammad maso <mohammadmasoudie@gmail.com> 1658038365 +0430	commit: delete tour's tabs
+297376717c7bc0af963d17c1d847eca2cc998c5c 146d2de01e9bbd13af19e42c6a2b257f27e98fb7 mohammad maso <mohammadmasoudie@gmail.com> 1658038646 +0430	commit: delete get review button
+146d2de01e9bbd13af19e42c6a2b257f27e98fb7 6032223a508db3f72ff250b356af73821b6912ff mohammad maso <mohammadmasoudie@gmail.com> 1658039144 +0430	commit: call get review as function
+6032223a508db3f72ff250b356af73821b6912ff 2d7b3ef2e09b0bc028baacac97009d04b50b9e08 mohammad maso <mohammadmasoudie@gmail.com> 1658039395 +0430	commit: improve add comment icon
+2d7b3ef2e09b0bc028baacac97009d04b50b9e08 0ec12df1ca7169225a5876bc8715877127c58a24 mohammad maso <mohammadmasoudie@gmail.com> 1658039549 +0430	commit: remove tour badge
+0ec12df1ca7169225a5876bc8715877127c58a24 0da7278f8d028c4a9ce9a83f07375f7a382a9564 mohammad maso <mohammadmasoudie@gmail.com> 1658039834 +0430	commit: fix tab panel
+0da7278f8d028c4a9ce9a83f07375f7a382a9564 77e3e702a642eeaba280f7e9c1f664eebac1590e mohammad maso <mohammadmasoudie@gmail.com> 1658044991 +0430	commit: fix footer year
+77e3e702a642eeaba280f7e9c1f664eebac1590e acbc3ee42d2bd24ece57f68f0a3b037f6714b1a8 mohammad maso <mohammadmasoudie@gmail.com> 1658050390 +0430	commit: add close button to stickybanner
+acbc3ee42d2bd24ece57f68f0a3b037f6714b1a8 1ba55590c28841b40e04225af0792aedbdd52517 mohammad maso <mohammadmasoudie@gmail.com> 1658050558 +0430	commit: disable fucking raychat
+1ba55590c28841b40e04225af0792aedbdd52517 49f90b0e51a51bbb0ab6020386774478807ecfc7 mohammad maso <mohammadmasoudie@gmail.com> 1658051527 +0430	commit: fix carusal
+49f90b0e51a51bbb0ab6020386774478807ecfc7 c75229ae1752aa24f400c93fcac31c3664d66eda mohammad maso <mohammadmasoudie@gmail.com> 1658059965 +0430	commit: fetch servewr address from env
+c75229ae1752aa24f400c93fcac31c3664d66eda ac7b95e5b56f9609e53504a4edebb86c153e9bfb mohammad maso <mohammadmasoudie@gmail.com> 1658060022 +0430	commit: produnction env
+ac7b95e5b56f9609e53504a4edebb86c153e9bfb e2f5f2e7d5cd0bda6c1d7fcf4402e8eb64837b10 mohammad maso <mohammadmasoudie@gmail.com> 1658060260 +0430	commit: some change
+e2f5f2e7d5cd0bda6c1d7fcf4402e8eb64837b10 42000fe4eead05270a59584c9ed6564a712ec8df mohammad maso <mohammadmasoudie@gmail.com> 1658136027 +0430	commit: add nprogress css
+42000fe4eead05270a59584c9ed6564a712ec8df 1591282fd7c715c5398dab3c52a71eef072048aa mohammad maso <mohammadmasoudie@gmail.com> 1658137071 +0430	commit: fix register
+1591282fd7c715c5398dab3c52a71eef072048aa ef9e7f045e89bb8b30d5fdb290995c6d60f0825e mohammad maso <mohammadmasoudie@gmail.com> 1658137525 +0430	commit: UserUserType
+ef9e7f045e89bb8b30d5fdb290995c6d60f0825e 1591282fd7c715c5398dab3c52a71eef072048aa mohammad maso <mohammadmasoudie@gmail.com> 1658137552 +0430	reset: moving to HEAD~
+1591282fd7c715c5398dab3c52a71eef072048aa a31a928cbcbedc2f034de844f95851137f8e7436 mohammad maso <mohammadmasoudie@gmail.com> 1658138470 +0430	commit: delete usertype from mequery
+a31a928cbcbedc2f034de844f95851137f8e7436 f49423dbdf304e0cdf1b1d443a597743ebd24d4b mohammad maso <mohammadmasoudie@gmail.com> 1658138477 +0430	commit: delete usertype from mequery
+f49423dbdf304e0cdf1b1d443a597743ebd24d4b c05da01666d2d21f5c355dae80988f1893963cb7 mohammad maso <mohammadmasoudie@gmail.com> 1658139071 +0430	commit: fix userType
+c05da01666d2d21f5c355dae80988f1893963cb7 0ce8416e9b73f3453f4c0f5518677a401117fd7d mohammad maso <mohammadmasoudie@gmail.com> 1658148478 +0430	commit: ,
+0ce8416e9b73f3453f4c0f5518677a401117fd7d e81639f68678ccc04d6dffe7215d86fb95a7084f mohammad maso <mohammadmasoudie@gmail.com> 1658325347 +0430	commit: ¯\_(ツ)_/¯
+e81639f68678ccc04d6dffe7215d86fb95a7084f 0b58cf0a2d0b55d14e7a1dc85f2a11ed8091f769 mohammad maso <mohammadmasoudie@gmail.com> 1658392038 +0430	commit: first test failed SX
+0b58cf0a2d0b55d14e7a1dc85f2a11ed8091f769 9b243ba05ddc95bc336c3b60cfa9960b23447e69 mohammad maso <mohammadmasoudie@gmail.com> 1658585504 +0430	commit: Finally: ssr travelogue
+9b243ba05ddc95bc336c3b60cfa9960b23447e69 0b58cf0a2d0b55d14e7a1dc85f2a11ed8091f769 mohammad maso <mohammadmasoudie@gmail.com> 1658585861 +0430	reset: moving to HEAD~
+0b58cf0a2d0b55d14e7a1dc85f2a11ed8091f769 2add9c386c89e5e05fe8f79cdce1483613a55b37 mohammad maso <mohammadmasoudie@gmail.com> 1658585929 +0430	commit: Finally: ssr travelogue
+2add9c386c89e5e05fe8f79cdce1483613a55b37 71959938db9db26986d6e19f3b84c9fd48c40fb5 mohammad maso <mohammadmasoudie@gmail.com> 1658586282 +0430	commit: add residence
+71959938db9db26986d6e19f3b84c9fd48c40fb5 68be1434606e7273305b878f9713c5d7ad1efefd mohammad maso <mohammadmasoudie@gmail.com> 1658586362 +0430	merge origin/master: Merge made by the 'ort' strategy.
+68be1434606e7273305b878f9713c5d7ad1efefd 06d8a4c4b40ecd6644d818386faa1fa38518d73a mohammad maso <mohammadmasoudie@gmail.com> 1658588258 +0430	commit: enhance seo
+06d8a4c4b40ecd6644d818386faa1fa38518d73a 8728e32e7394d529b895e2929aaf064117273771 mohammad maso <mohammadmasoudie@gmail.com> 1658590667 +0430	commit: profile ssr mode
+8728e32e7394d529b895e2929aaf064117273771 294e8bb36cdc82e4b6344d96df5fd741be6c3191 mohammad maso <mohammadmasoudie@gmail.com> 1658590806 +0430	commit: type fix
+294e8bb36cdc82e4b6344d96df5fd741be6c3191 5aa4f0acfd043b41459b134f9b95f355790c4629 mohammad maso <mohammadmasoudie@gmail.com> 1658592072 +0430	commit: add caching policy
+5aa4f0acfd043b41459b134f9b95f355790c4629 478479defde5885a64d5f7009ce753fd0dcf7d9e mohammad maso <mohammadmasoudie@gmail.com> 1658592991 +0430	commit: modify opengraphtype
+478479defde5885a64d5f7009ce753fd0dcf7d9e 9d9683001bd9620042fd545a604c65e38ff82ae1 mohammad maso <mohammadmasoudie@gmail.com> 1658643541 +0430	commit: ssr article
+9d9683001bd9620042fd545a604c65e38ff82ae1 87891919d751d800e2c892eb90d2aa4681f8898b mohammad maso <mohammadmasoudie@gmail.com> 1658659105 +0430	commit: add some images
+87891919d751d800e2c892eb90d2aa4681f8898b dee6a49ba84bae3bb5e7e95ecef753c4509eb83a mohammad maso <mohammadmasoudie@gmail.com> 1658664921 +0430	commit: edit vscode config
+dee6a49ba84bae3bb5e7e95ecef753c4509eb83a 1151759408eb5da79449eac808b8003f8adc1ddd mohammad maso <mohammadmasoudie@gmail.com> 1658665435 +0430	commit: fix fallback path
+1151759408eb5da79449eac808b8003f8adc1ddd 0433e6089fa2d9fe723dd5a18e712c8dd026b39f mohammad maso <mohammadmasoudie@gmail.com> 1658665485 +0430	commit: implement createResidence mutation
+0433e6089fa2d9fe723dd5a18e712c8dd026b39f c65605f5215582f668094275c11d5fec072d3eea mohammad maso <mohammadmasoudie@gmail.com> 1658665518 +0430	commit: type fix
+c65605f5215582f668094275c11d5fec072d3eea c33b50b84da043e67051ab7e145e48908344ad02 mohammad maso <mohammadmasoudie@gmail.com> 1658669887 +0430	commit: fix image
+c33b50b84da043e67051ab7e145e48908344ad02 99d3c567a5a48512951e0f247ef35baec3803154 mohammad maso <mohammadmasoudie@gmail.com> 1658674451 +0430	commit: add sentry support
+99d3c567a5a48512951e0f247ef35baec3803154 7db44799b4dbab32845a3450b5faae048637cd4a mohammad maso <mohammadmasoudie@gmail.com> 1658676690 +0430	commit: type fix
+7db44799b4dbab32845a3450b5faae048637cd4a 99d3c567a5a48512951e0f247ef35baec3803154 mohammad maso <mohammadmasoudie@gmail.com> 1658677353 +0430	reset: moving to HEAD~
+99d3c567a5a48512951e0f247ef35baec3803154 c33b50b84da043e67051ab7e145e48908344ad02 mohammad maso <mohammadmasoudie@gmail.com> 1658677358 +0430	reset: moving to HEAD~
+c33b50b84da043e67051ab7e145e48908344ad02 6b39b07f91170f08feb771ef511a07a4f0b49a54 mohammad maso <mohammadmasoudie@gmail.com> 1658677787 +0430	commit: delte sentry support
+6b39b07f91170f08feb771ef511a07a4f0b49a54 862d595c2660822290a93611e98655908057db2a mohammad maso <mohammadmasoudie@gmail.com> 1658677798 +0430	commit: fix apollo link
+862d595c2660822290a93611e98655908057db2a 03537fad48913716950599448d691cb3bb9a33d7 mohammad maso <mohammadmasoudie@gmail.com> 1658678207 +0430	commit: some changes
+03537fad48913716950599448d691cb3bb9a33d7 280cc4c109d1e47f445b87000d41baefc2e263fd mohammad maso <mohammadmasoudie@gmail.com> 1658678317 +0430	commit (merge): Merge remote-tracking branch 'origin/master'
+280cc4c109d1e47f445b87000d41baefc2e263fd 8f67cf486309c84c4ba556e48e2c00828053596a mohammad maso <mohammadmasoudie@gmail.com> 1658680827 +0430	commit: delete map for production
+8f67cf486309c84c4ba556e48e2c00828053596a d055b09a5f672bef72ba0df9ae2f54edbeb29d44 mohammad maso <mohammadmasoudie@gmail.com> 1658721198 +0430	commit: install three-globe
+d055b09a5f672bef72ba0df9ae2f54edbeb29d44 10b2e82a1e8ce71a98b12ea2219926d5c1a685fb mohammad maso <mohammadmasoudie@gmail.com> 1658721217 +0430	commit: change map component svg
+10b2e82a1e8ce71a98b12ea2219926d5c1a685fb 031cb9bd0d66376c93b51519c0321650f179098b mohammad maso <mohammadmasoudie@gmail.com> 1658721229 +0430	commit: some type fix
+031cb9bd0d66376c93b51519c0321650f179098b fe92d1bfe517eaa5055a9c2b409adf2dd5609d84 mohammad maso <mohammadmasoudie@gmail.com> 1658823207 +0430	commit: fix auth random picture
+fe92d1bfe517eaa5055a9c2b409adf2dd5609d84 63e4864405453a1911d59626593710c493ff282e mohammad maso <mohammadmasoudie@gmail.com> 1658823372 +0430	commit: add globe component exp
+63e4864405453a1911d59626593710c493ff282e 3a60bbdf0c7d1f2295ddb40196019c8590e6e3ba mohammad maso <mohammadmasoudie@gmail.com> 1658824610 +0430	commit: fix picture

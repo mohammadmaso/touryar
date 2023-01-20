@@ -1,0 +1,110 @@
+query AllArticle(
+  $allArticleOffset: Int
+  $allArticleBefore: String
+  $allArticleAfter: String
+  $allArticleFirst: Int
+  $allArticleLast: Int
+  $allArticleCategory: ID
+) {
+  allArticle(
+    offset: $allArticleOffset
+    before: $allArticleBefore
+    after: $allArticleAfter
+    first: $allArticleFirst
+    last: $allArticleLast
+    category: $allArticleCategory
+  ) {
+    pageInfo {
+      hasNextPage
+      hasPreviousPage
+      startCursor
+      endCursor
+    }
+    edges {
+      cursor
+      node {
+        id
+        title
+        shortDescription
+        likes
+        timeToRead
+        image
+        author {
+          username
+          avatar
+        }
+        category {
+          title
+        }
+      }
+    }
+  }
+}
+
+query AllArticleCategoryies {
+  allArticleCategories {
+    edges {
+      node {
+        id
+        title
+        svg
+      }
+    }
+  }
+}
+
+query Article($articleId: ID!) {
+  article(id: $articleId) {
+    title
+    shortDescription
+    content
+    createdAt
+    likes
+    timeToRead
+    image
+    author {
+      id
+      username
+      avatar
+    }
+    category {
+      title
+      id
+    }
+    activities {
+      edges {
+        node {
+          title
+          svg
+        }
+      }
+    }
+    places {
+      edges {
+        node {
+          name
+        }
+      }
+    }
+    accessories {
+      edges {
+        node {
+          name
+          image
+          imageLink
+        }
+      }
+    }
+    reviewsOfArticle {
+      edges {
+        node {
+          author {
+            username
+            avatar
+          }
+          description
+        }
+      }
+    }
+  }
+}

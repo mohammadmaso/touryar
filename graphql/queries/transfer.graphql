@@ -1,0 +1,11 @@
+query AllTransferTypes {
+  allTransferType {
+    edges {
+      node {
+        id
+        title
+        svg
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+mutation UpdateProfile($updateProfileInput: UpdateProfileInput!) {
+  updateProfile(input: $updateProfileInput) {
+    profile {
+      user {
+        id
+      }
+      about
+      tripStatus
+      header
+    }
+  }
+}
+
+mutation UpdateUser($updateUserInput: UpdateUserInput!) {
+  updateUser(input: $updateUserInput) {
+    user {
+      avatar
+      username
+      id
+    }
+  }
+}
+
+mutation FollowOrUnfollow($followOrUnfollowInput: FollowOrUnfollowInput!) {
+  followOrUnfollow(input: $followOrUnfollowInput) {
+    followStatus
+  }
+}

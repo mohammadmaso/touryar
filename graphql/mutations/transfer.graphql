@@ -1,0 +1,43 @@
+mutation CreateSinglTransfer(
+  $src: ID!
+  $destination: ID!
+  $transferInput: TransferInput
+  $transferType: ID!
+) {
+  createTransfer(
+    src: $src
+    destination: $destination
+    transferInput: $transferInput
+    transferType: $transferType
+  ) {
+    success
+    transfer {
+      id
+      duration
+      src {
+        name
+        latitude
+        longitude
+        id
+      }
+      destination {
+        name
+        latitude
+        longitude
+        id
+      }
+      startTime
+      transferType {
+        id
+        title
+        svg
+      }
+    }
+  }
+}
+
+mutation DeleteSingleTransfer($id: ID!) {
+  deleteTransfer(transferId: $id) {
+    success
+  }
+}

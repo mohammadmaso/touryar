@@ -1,0 +1,188 @@
+mutation LikeTrip($createTripLikeTripId: ID!) {
+  createTripLike(tripId: $createTripLikeTripId) {
+    success
+    like
+    trip {
+      id
+      likes
+      userLiked
+    }
+  }
+}
+
+mutation CreateTripReview($createTripReviewInput: CreateTripReviewInput!) {
+  createTripReview(input: $createTripReviewInput) {
+    success
+  }
+}
+
+mutation CreateInitialTrip(
+  $createTripTripInput: TripInput!
+  $createTripTripRelatedInput: TripRelatedInput!
+  $createTripProvince: ID!
+  $createTripCountry: ID!
+  $startDate: Date
+  $endDate: Date
+) {
+  createTrip(
+    tripInput: $createTripTripInput
+    tripRelatedInput: $createTripTripRelatedInput
+    province: $createTripProvince
+    country: $createTripCountry
+  ) {
+    trip {
+      id
+    }
+    success
+  }
+}
+
+mutation UpdateTrip(
+  $tripData: UpdateTripInput
+  $tripId: ID!
+  $removeTripRelatedData: TripRelatedInput
+  $tripRelatedData: TripRelatedInput
+  $province: ID
+  $country: ID
+) {
+  updateTrip(
+    tripData: $tripData
+    tripId: $tripId
+    tripRelatedData: $tripRelatedData
+    removeTripRelatedData: $removeTripRelatedData
+    province: $province
+    country: $country
+  ) {
+    trip {
+      id
+    }
+    success
+  }
+}
+
+mutation LikeTripReviewMutation($likeTripReviewReview: ID!) {
+  likeTripReview(review: $likeTripReviewReview) {
+    tripReviewLike {
+      value
+      review {
+        likesCount
+        dislikesCount
+      }
+    }
+  }
+}
+
+mutation DislikeTripReviewMutation($dislikeTripReviewReview: ID!) {
+  dislikeTripReview(review: $dislikeTripReviewReview) {
+    tripReviewLike {
+      value
+      review {
+        dislikesCount
+        likesCount
+      }
+    }
+  }
+}
+
+mutation SaveTripMutation($saveTripTrip: ID) {
+  saveTrip(trip: $saveTripTrip) {
+    tripCollection {
+      trip {
+        userSaved
+      }
+    }
+    success
+  }
+}
+
+mutation CreateExperienceImage($imageList: [ExperienceImageInputType]!) {
+  createExperienceImages(imageList: $imageList) {
+    success
+    images {
+      id
+      image
+    }
+  }
+}
+
+mutation CreateExperinceMutation(
+  $experienceInput: ExperienceInput!
+  $experienceRelatedInput: ExperienceRelatedInputs
+) {
+  createExperience(
+    experienceInput: $experienceInput
+    experienceRelatedInput: $experienceRelatedInput
+  ) {
+    success
+    experience {
+      id
+      description
+      images {
+        edges {
+          node {
+            id
+            image
+          }
+        }
+      }
+      title
+      activities {
+        edges {
+          node {
+            id
+            titleFa
+            svg
+          }
+        }
+      }
+    }
+  }
+}
+
+mutation CreateResidence(
+  $name: String!
+  $residenceType: ID!
+  $stayDuration: Int!
+  $tripId: ID!
+  $longitude: String
+  $latitude: String
+) {
+  createResidence(
+    name: $name
+    residenceType: $residenceType
+    stayDuration: $stayDuration
+    tripId: $tripId
+    longitude: $longitude
+    latitude: $latitude
+  ) {
+    success
+  }
+}
+
+mutation DeleteResidence($residenceId: ID!, $tripId: ID!) {
+  deleteResidence(residenceId: $residenceId, tripId: $tripId) {
+    success
+  }
+}
+
+mutation UpdateResidence(
+  $residenceId: ID!
+  $tripId: ID!
+  $latitude: String
+  $longitude: String
+  $name: String
+  $residenceType: ID
+  $stayDuration: Int
+) {
+  updateResidence(
+    residenceId: $residenceId
+    tripId: $tripId
+    latitude: $latitude
+    longitude: $longitude
+    name: $name
+    residenceType: $residenceType
+    stayDuration: $stayDuration
+  ) {
+    success
+  }
+}
