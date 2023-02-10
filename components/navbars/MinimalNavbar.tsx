@@ -76,7 +76,7 @@ const MinimalNavBar = (props: any) => {
           color={useColorModeValue('gray.800', 'white')}
         >
           <Stack justifyContent="center">
-            <Link href="/" passHref>
+            <Link href="#" passHref>
               <Logo height={100} width={180} />
             </Link>
             <WizardNavIcons selected={props.selected} />

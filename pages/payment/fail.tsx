@@ -1,7 +1,5 @@
-import { Center, Text, Button, Stack, Link } from '@chakra-ui/react';
-import React from 'react';
+import { Button, Center, Link, Stack, Text } from '@chakra-ui/react';
 import { BiSupport } from 'react-icons/bi';
-import { HiSupport } from 'react-icons/hi';
 import Lottie from 'react-lottie';
 import * as animationData from '../../public/animations/lf20_imrP4H.json';
 
@@ -33,8 +31,10 @@ const fail = (props: Props) => {
             برای پیگیری بیشتر با پشتیبانی در تماس باشید.
           </Text>
           <Link as={'button'} href="tel:+989380374660" rounded="full">
-            <BiSupport />
-            09380374660
+            <>
+              <BiSupport />
+              09380374660
+            </>
           </Link>
           <Button colorScheme="red" rounded="full">
             بازگشت به داشبورد

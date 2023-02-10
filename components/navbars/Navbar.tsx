@@ -1,30 +1,22 @@
-import React, { ReactElement, useState } from 'react';
+import { useState } from 'react';
 
+import { CloseIcon, HamburgerIcon } from '@chakra-ui/icons';
 import {
   Box,
   Flex,
   IconButton,
-  Button,
-  Stack,
-  useColorModeValue,
   useBreakpointValue,
+  useColorModeValue,
   useDisclosure,
   useEventListener,
-  Wrap,
 } from '@chakra-ui/react';
-import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
-import Logo from '../logos/TextLogo';
-import { IoMenuOutline as MenuIcon } from 'react-icons/io5';
 import Link from 'next/link';
 import useIsSignedIn from '../../hooks/useIsSignedIn';
+import Logo from '../logos/TextLogo';
 
-import { HiOutlineLightBulb } from 'react-icons/hi';
-
-import { MobileNav } from './MobileNav';
-import { DesktopNav } from './DesktopNav';
-import NavProfile from './NavProfile';
-import NavButtons from './NavButtons';
 import CircleLogo from '../logos/CircleLogo';
+import { DesktopNav } from './DesktopNav';
+import { MobileNav } from './MobileNav';
 
 const NavBar = (props: any) => {
   const { isOpen, onToggle, onClose } = useDisclosure();
@@ -85,7 +77,7 @@ const NavBar = (props: any) => {
           flex={{ base: 1 }}
           justifyContent={{ base: 'center', md: 'start' }}
         >
-          <Link href="/" passHref>
+          <Link href="#" passHref>
             <Box
               textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
               fontFamily={'heading'}

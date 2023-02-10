@@ -1,5 +1,4 @@
-import React from 'react';
-import { Box, Text, Image } from '@chakra-ui/react';
+import { Box, Image } from '@chakra-ui/react';
 import Link from 'next/link';
 
 type Props = {
@@ -8,7 +7,7 @@ type Props = {
 };
 export default function CircleLogo(props: Props) {
   return (
-    <Link href={'/'}>
+    <Link href={'/'} passHref>
       <Box {...props} cursor="pointer">
         <Image
           src={'/CircleLogo.svg'}
