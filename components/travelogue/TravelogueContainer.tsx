@@ -1,45 +1,38 @@
 import {
-  Container,
-  Flex,
-  Heading,
-  Stack,
-  Wrap,
-  WrapItem,
-  Divider,
-  TagRightIcon,
-  TagLabel,
-  Box,
-  useEventListener,
-  Text,
   Button,
-  Center,
-  useToast,
-  useDisclosure,
+  Divider,
+  Flex,
   Icon,
+  Slide,
+  Stack,
+  Text,
+  useDisclosure,
+  useToast,
+  Wrap,
 } from '@chakra-ui/react';
-import React, { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 
-import BaseLayout from '../../layouts/BaseLayout';
-import { TravelogueAccomodations } from './TravelogueAccomodations';
-import { TravelogueMap } from './TravelogueMap';
-import { TravelogueHeader } from './TravelogueHeader';
-import { TravelogueGallery } from './TravelogueGallery';
-import { TravelogueDescription } from './TravelogueDescription';
-import TravelogueCompanions from './TravelogueCompanions';
-import { TravelogueExperiences } from './TravelogueExperiences';
-import { TraveloguePlaces } from './TraveloguePlaces';
-import TravelogueAccessories from './TravelogueAccessories';
-import { Transfers } from './TravelogueTransfers';
-import TravelogueActivities from './TravelogueActivities';
-import { TripDetailQuery, TripImageType } from '../../graphql/generated/types';
+import { TripDetailQuery } from '../../graphql/generated/types';
 import ApiLoading from '../ApiLoading';
+import TravelogueAccessories from './TravelogueAccessories';
+import { TravelogueAccomodations } from './TravelogueAccomodations';
+import TravelogueActivities from './TravelogueActivities';
+import TravelogueCompanions from './TravelogueCompanions';
+import { TravelogueDescription } from './TravelogueDescription';
+import { TravelogueExperiences } from './TravelogueExperiences';
+import { TravelogueGallery } from './TravelogueGallery';
+import { TravelogueMap } from './TravelogueMap';
+import { TraveloguePlaces } from './TraveloguePlaces';
 import TravelogueReview from './TravelogueReview';
+import { Transfers } from './TravelogueTransfers';
 
-import EmptyResult from '../EmptyResult';
-import { BiComment, BiCommentAdd, BiPlus, BiPlusCircle } from 'react-icons/bi';
+import { BiComment, BiPlusCircle } from 'react-icons/bi';
+import { FiSave } from 'react-icons/fi';
 import useIsSignedIn from '../../hooks/useIsSignedIn';
-import AddReviewModal from '../Modals/AddReviewModal';
+import EmptyResult from '../EmptyResult';
 import ImageGallery, { IImage } from '../ImageGallery';
+import AddReviewModal from '../Modals/AddReviewModal';
+import BuyModal from '../Modals/BuyModal';
 
 interface Props {
   data: TripDetailQuery;
@@ -51,6 +44,7 @@ export default function TravelogueContainer({ data, queries, actions }: Props) {
   const isSignedIn = useIsSignedIn();
   const toast = useToast();
   const addReviewModal = useDisclosure();
+  const buyModal = useDisclosure();
 
   const lighBox = useDisclosure();
 
@@ -279,7 +273,23 @@ export default function TravelogueContainer({ data, queries, actions }: Props) {
         user={data.trip?.author}
       />
 
-      <Box h="5vh" />
+      <BuyModal {...buyModal} />
+
+      {/* <Box h="5vh" /> */}
+      <Slide direction="bottom" in={true} style={{ zIndex: 10 }}>
+        <Button
+          flex={6}
+          p={{ base: '20px', sm: '20px', md: '40px', lg: '40px' }}
+          mt="4"
+          colorScheme="primary"
+          rounded="none"
+          width={'full'}
+          leftIcon={<FiSave />}
+          onClick={buyModal.onOpen}
+        >
+          رزرو تور | قیمت ۱۰۰ هزارتومان
+        </Button>
+      </Slide>
     </>
   );
 }
