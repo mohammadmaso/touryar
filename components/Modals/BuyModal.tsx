@@ -32,6 +32,11 @@ const BuyModal = (props: any) => {
               شبیه‌سازی پرداخت موفق
             </Button>
           </Link>
+          <Link href={'/payment/fail'}>
+            <Button width={'full'} mr={3} onClick={props.onClose}>
+              شبیه‌سازی پرداخت ناموفق
+            </Button>
+          </Link>
         </ModalFooter>
       </ModalContent>
     </Modal>
